@@ -265,6 +265,9 @@ section{
 .catalog__box__items{
     position: relative;
 }
+.catalog__box__items img{
+    width: 100%;
+}
 .catalog__box__items h2{
     display: block;
     color: #4C2801;
@@ -417,6 +420,48 @@ section{
 .form__btn:hover{
     background-color: #A08351;
 }
+.stocks__box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.stocks__box__items{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+}
+.stocks__box__items--full{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.stocks__box__inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.stocks__box__inner img{
+    width: 100%;
+}
+.stocks__box__items--full .stocks__box__inner{
+    grid-template-columns: 60% auto;
+}
+.stocks__box__inner h2{
+    display: block;
+    color: #4C2801;
+    font-size: 48px;
+    font-family: Spectral;
+    font-weight: 600;
+    line-height: 60px;
+    padding-bottom: 16px;
+}
+.stocks__box__items:last-child{
+    padding-bottom: 0;
+}
 @media (max-width: 1199px){
     .wrapper{
         padding: 0 15px;
@@ -440,6 +485,13 @@ section{
     }
     .form__btn{
         padding: 16px;
+    }
+    .stocks__box__inner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .stocks__box__inner img{
+        max-height: 450px;
+        object-fit: cover;
     }
 }
 @media (max-width: 991px){
@@ -567,6 +619,9 @@ section{
     .question__box{
         padding: 30px 15px 40px 15px;
     }
+    .stocks__box__items--full .stocks__box__inner{
+        grid-template-columns: repeat(1, 1fr)
+    }
 }
 @media (max-width: 767px){
     .catalog__absolute{
@@ -612,11 +667,22 @@ section{
     .question__box__items h2{
         font-size: 40px;
     }
+    .stocks__box__inner h2{
+        font-size: 40px;
+    }
     .footer {
         margin-top: 85px;
     }
     .question__box{
         grid-template-columns: auto;
+    }
+    .stocks__box__items{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+    .stocks__box__inner{
+        gap: 20px;
     }
 }
 @media (max-width: 424px){
