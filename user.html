@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Szafka osobista</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__box">
+                <a class="logo" href="/">
+                    <img class="logo__img" src="img/logo.png" alt="Krolewska kawa">
+                </a>
+                <nav class="menu">
+                    <a href="#" class="menu__btn">
+                        <span class="menu__btn--element"></span>
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Menu</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Podsumowania historyczne</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Akcje</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Kontakty</a>
+                        </li>
+                        <li class="menu__list__items menu__list__items--mobile">
+                            <a class="header__btn__link" href="#">Zaloguj się</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__btn">
+                    <a class="header__btn__link" href="#">Zaloguj się</a>
+                </div>
+            </div>
+            <div class="header__title">
+                <h1>Szafka osobista</h1>
+            </div>
+        </div>
+    </header>
+    <section class="user">
+        <div class="wrapper">
+            <div class="user__box">
+                <div class="user__box__items">
+                    <form action="#" class="user__form">
+                        <div class="user__form__items">
+                            <label class="user__form__label" for="surname">Nazwisko</label>
+                            <input class="user__form__text" type="text" name="surname" id="surname" value="Novak">
+                        </div>
+                        <div class="user__form__items">
+                            <label class="user__form__label" for="firstname">Imię</label>
+                            <input class="user__form__text" type="text" name="firstname" id="firstname" value="Julia">
+                        </div>
+                        <div class="user__form__items">
+                            <label class="user__form__label" for="phone">Numer telefonu</label>
+                            <input class="user__form__text" type="text" name="phone" id="phone" value="+48 12 345 67 89">
+                        </div>
+                        <div class="user__form__items">
+                            <label class="user__form__label" for="email">Email</label>
+                            <input class="user__form__text" type="text" name="email" id="email" value="julia@gmail.com">
+                        </div>
+                        <div class="user__form__items--full">
+                            <label class="user__form__label" for="address">Adres</label>
+                            <input class="user__form__text" type="text" name="address" id="address" value="1949 Linda Street, West Brunswick Twp, PA 19549">
+                        </div>
+                        <div class="user__form__items">
+                            <button class="user__form__send" type="submit">Zapisz zmiany</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user__box__items">
+                    <a class="user__box__items__link" style="background-image: url(img/user-img-01.jpg);" href="#">Menu</a>
+                </div>
+                <div class="user__box__items">
+                    <a class="user__box__items__link user__box__items__link--color" style="background-image: url(img/user-img-02.jpg);" href="#">Akcje</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__box">
+                <div class="footer__box__items">
+                    <p>Krolewska kawa 2023. Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div class="footer__box__items footer__box__items--last">
+                    <a class="footer__link" href="#">Projektowanie i rozwój — NaStarcie baj</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
