@@ -1,14 +1,201 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="scroll--home">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
-<body>
+
+<body class="body--scroll-home">
+    <header class="header header--home">
+        <div class="wrapper">
+            <div class="header__box">
+                <a class="logo" href="/">
+                    <img class="logo__img" src="img/logo.png" alt="Krolewska kawa">
+                </a>
+                <nav class="menu">
+                    <a href="#" class="menu__btn">
+                        <span class="menu__btn--element"></span>
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Menu</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Podsumowania historyczne</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Akcje</a>
+                        </li>
+                        <li class="menu__list__items">
+                            <a class="menu__link" href="#">Kontakty</a>
+                        </li>
+                        <li class="menu__list__items menu__list__items--mobile">
+                            <a class="header__btn__link" href="#">Zaloguj się</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__btn">
+                    <a class="header__btn__link" href="#">Zaloguj się</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hero" data-0="transform:translateX(0%);" data-1000="transform:translateX(-300%)">
+        <div class="hero__box">
+            <img class="hero__box__fog" src="img/hero-fog.webp" alt="">
+            <img class="hero__box__castle" src="img/hero-box-castle.webp" alt="">
+            <div class="wrapper">
+                <div class="hero__box__circle">
+                    <div class="hero__box__circle__items">
+                        <img src="img/hero-circle-left.svg" alt="" class="hero__box__circle--left">
+                    </div>
+                    <div class="hero__box__circle__items">
+                        <img src="img/hero-circle-right.svg" alt="" class="hero__box__circle--right">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__box">
+            <div class="wrapper wrapper--about">
+                <div class="hero__box__gallery">
+                    <div class="hero__box__gallery__items">
+                        <div class="hero__box__gallery__inner">
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_01.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_02.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_03.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_04.jpg" alt="" class="gallery__img">
+                                <img src="img/gallery_05.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_06.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_07.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_08.jpg" alt="" class="gallery__img">
+                            </div>
+                            <div class="hero__box__gallery__inner__items">
+                                <img src="img/gallery_09.jpg" alt="" class="gallery__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__box__gallery__content">
+                        <h2>Tytuł</h2>
+                        <p>Z drugiej strony ramy i miejsce szkolenia odgrywają ważną rolę w kształtowaniu nowych propozycji. Towarzysze! Rozpoczęcie codziennej pracy nad kształtowaniem pozycji wiąże się z procesem wprowadzania i unowocześniania form rozwoju.</p>
+                        <p>Z drugiej strony, nowy model funkcjonowania organizacji pociąga za sobą proces wprowadzania i unowocześniania kolejnych kierunków rozwoju. Stały wzrost liczebności i zakresu naszej działalności pozwala również na ocenę znaczenia systemu szkoleń zgodnie z aktualnymi potrzebami.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__box">
+            <div class="wrapper wrapper--about wrapper--about--tablet">
+                <div class="hero__box__title">
+                    <h2>Nasza filozofia</h2>
+                </div>
+                <div class="hero__box__about hero__box__about--between">
+                    <div class="hero__box__about__items">
+                        <div class="hero__box__about__inner">
+                            <img src="img/hero__box__about_01.svg" alt="">
+                            <p>Skupiamy się na pysznej kawie wysokiej jakości. Staranna selekcja pozwala nam wybierać tylko najlepsze ziarna kawy i palić je w taki sposób, aby wydobyć najlepsze nuty smakowe i przekazać je do każdej filiżanki.</p>
+                        </div>
+                    </div>
+                    <div class="hero__box__about__items">
+                        <div class="hero__box__about__inner hero__box__about__inner--end">
+                            <img src="img/hero__box__about_02.svg" alt="">
+                            <p>Przygotowujemy naszą kawę ze specjalnym podejściem do każdego gościa i pomagamy znaleźć odpowiednie narzędzia i techniki, aby przygotować najlepszą kawę w dowolnym miejscu, zwłaszcza w domu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__box__about hero__box__about--center">
+                    <div class="hero__box__about__items">
+                        <div class="hero__box__about__inner">
+                            <img src="img/hero__box__about_03.svg" alt="">
+                            <p>Tak, mamy obsesję na punkcie jakości kawy. W tym celu używamy wyłącznie świeżo zebranych ziaren z całego świata, z których każde pozostawia swoją własną, niepowtarzalną historię w smaku.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__box__about hero__box__about--between">
+                    <div class="hero__box__about__items">
+                        <div class="hero__box__about__inner">
+                            <img src="img/hero__box__about_04.svg" alt="">
+                            <p>Nasz zespół żyje kawą i ideą rozwijania kultury kawowej. Sami wiele się uczymy i chętnie dzielimy się naszą wiedzą z naszymi gośćmi. Pracujemy na najlepszym sprzęcie i korzystamy z najnowocześniejszych narzędzi i technologii.</p>
+                        </div>
+                    </div>
+                    <div class="hero__box__about__items">
+                        <div class="hero__box__about__inner hero__box__about__inner--end">
+                            <img src="img/hero__box__about_05.svg" alt="">
+                            <p>Korolewska Kawa to kawiarnia z wyjątkowym podejściem do swoich gości. Witamy wszystkich i chcemy uczynić każdego trochę szczęśliwszym. Szczęścia nie można kupić, ale można kupić kawę. To takie proste, aby stać się szczęśliwszym.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__box">
+            <div class="wrapper wrapper--about">
+                <div class="hero__box__slider">
+                    <div class="hero__box__slider__items">
+                        <div class="hero__box__slider__img">
+                            <img src="img/hero__box__slide__img-01.jpg" alt="">
+                        </div>
+                        <div class="hero__box__slider__content">
+                            <a href="#">Historyczna oś czasu</a>
+                            <p>Legenda głosi, że na dworze króla Augusta II w Warszawie w połowie XVIII wieku żył kucharz Wereszczak. Zasłynął on jako autor specjalnego sposobu przyrządzania kiełbasy. Kiełbasę, którą podawano "na wereszczaku", krojono w talarki, przekładano kawałkami słoniny i polewano pikantnym sosem. Miała być jedzona łyżką 🙂 Stąd powiedzenie: "Za króla Sasa kiełbasa łyżką". W klasycznej kuchni polskiej kiełbasę łyżkową nadal robi się z białej kiełbasy. Gotuje się ją w piwie i wodzie, a następnie kroi na kawałki i bardzo szybko dusi w gęstym sosie cebulowym.</p>
+                        </div>
+                    </div>
+                    <div class="hero__box__slider__items">
+                        <div class="hero__box__slider__img">
+                            <img src="img/hero__box__slide__img-01.jpg" alt="">
+                        </div>
+                        <div class="hero__box__slider__content">
+                            <a href="#">Historyczna oś czasu</a>
+                            <p>Legenda głosi, że na dworze króla Augusta II w Warszawie w połowie XVIII wieku żył kucharz Wereszczak. Zasłynął on jako autor specjalnego sposobu przyrządzania kiełbasy. Kiełbasę, którą podawano "na wereszczaku", krojono w talarki, przekładano kawałkami słoniny i polewano pikantnym sosem. Miała być jedzona łyżką 🙂 Stąd powiedzenie: "Za króla Sasa kiełbasa łyżką". W klasycznej kuchni polskiej kiełbasę łyżkową nadal robi się z białej kiełbasy. Gotuje się ją w piwie i wodzie, a następnie kroi na kawałki i bardzo szybko dusi w gęstym sosie cebulowym.</p>
+                        </div>
+                    </div>
+                    <div class="hero__box__slider__items">
+                        <div class="hero__box__slider__img">
+                            <img src="img/hero__box__slide__img-01.jpg" alt="">
+                        </div>
+                        <div class="hero__box__slider__content">
+                            <a href="#">Historyczna oś czasu</a>
+                            <p>Legenda głosi, że na dworze króla Augusta II w Warszawie w połowie XVIII wieku żył kucharz Wereszczak. Zasłynął on jako autor specjalnego sposobu przyrządzania kiełbasy. Kiełbasę, którą podawano "na wereszczaku", krojono w talarki, przekładano kawałkami słoniny i polewano pikantnym sosem. Miała być jedzona łyżką 🙂 Stąd powiedzenie: "Za króla Sasa kiełbasa łyżką". W klasycznej kuchni polskiej kiełbasę łyżkową nadal robi się z białej kiełbasy. Gotuje się ją w piwie i wodzie, a następnie kroi na kawałki i bardzo szybko dusi w gęstym sosie cebulowym.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer footer--home">
+        <div class="wrapper">
+            <div class="footer__box">
+                <div class="footer__box__items">
+                    <p>Krolewska kawa 2023. Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div class="footer__box__items footer__box__items--last">
+                    <a class="footer__link" href="#">Projektowanie i rozwój — NaStarcie baj</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script defer src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
     <script defer src="js/main.js"></script>
 </body>
+
 </html>

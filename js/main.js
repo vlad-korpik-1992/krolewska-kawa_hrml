@@ -53,6 +53,16 @@ $(document).ready(function() {
     ]
 	});
 
+    $('.hero__box__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      rows: 1,
+      arrows: true,
+      dots: false,
+      autoplay: false,
+      infinite: false
+    });
+
     $('.catalog__link').click(function (e) {
         e.preventDefault();
         let elem = e.target;
