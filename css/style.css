@@ -1269,6 +1269,11 @@ section {
     .footer--home{
         display: block;
     }
+
+    .scroll--home, .body--scroll-home{
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1491,11 +1496,6 @@ section {
     .hero__box__slider__items {
         grid-template-columns: auto;
         gap: 0px;
-    }
-
-    .scroll--home, .body--scroll-home{
-        overflow-x: hidden !important;
-        overflow-y: scroll !important;
     }
 
     .hero__box__circle__items {
